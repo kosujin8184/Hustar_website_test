@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="Generator" content="EditPlus®">
+<meta name="Author" content="">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<title>Document</title>
+
+
+<script src="./js/jquery-1.12.4.min.js"></script>
+<script src="./js/jquery-ui.min.js"></script>
+
+<script src="./js/swiper.min.js"></script>
+<link rel="stylesheet" href="./js/swiper.min.css">
+
+</head>
+<body>
+
+
+
+
+
+
+
+<style>
+
+
+/* 초기 setting (이런 선언 안 해놓으면 각자의 원래 값으로 속성을 가지고 있다.)======================================================================================================*/
+body{margin:0; padding:0;}
+html, h1, h2, h3, h4, h5, h6{margin:0; padding:0; border:0;}
+ul,li,dl,dt,dd {margin:0; padding:0; list-style:none}
+a{text-decoration:none; color:#000}
+img{max-width:100%; height:auto;}
+
+
+
+/* 헤더 - 로고, 상단메뉴 ===============================================================================================================================================*/
+.header{background:#26649e; overflow:hidden}
+
+
+.header > div{overflow:hidden; max-width:1200px; margin:0 auto;}	/*상위 div, margin:상단 하단 왼쪽 오른쪽(0:상단하단 auto:왼쪽오른쪽 -> 창 크기움직여도 유지되게, 가운데 정렬이라 보면 됨)*/
+																   /*max-width가 있어서 창이 움직여도 크기가 동적으로 고정됨*/
+.header > div > div.logo{}	/*상위 div안에 div.logo*/
+.header > div > div.top-btn{}	/*상위 div안에 div.top-btn*/
+
+
+.header .logo{float:left;}
+.header .logo h1{font-size:17px;}
+.header .logo h1 a{display:block; padding:5px;}
+.header .logo h1 img{width:100px;}
+
+
+.header .top-btn{float:right;}
+.header .top-btn ul li a{font-size:14px; color:#fff;}
+.header .top-btn ul{overflow:hidden; margin-top:10px;}	/*float속성이 가운데 정렬 없기때문에 overflow를 넣어준다.*/
+.header .top-btn ul li{float:left; margin-left:10px;}	/*로그인 회원가입 버튼 부분*/
+.header .top-btn ul li a{display:block; padding:5px;}
+
+</style>
+
+
+
+<!--상단헤더-->
+<!---div는 영역을 지정하는것, class는 그 이름을 지정-->
+<div class = "header">
+  <div>
+    <div class = "logo">
+      <h1><a href="/index1.html"><img src="./img/logo.png"></a></h1>
+    </div>
+
+
+    <div class = "top-btn">
+      <ul>
+        <li><a href="#none">로그인</a></li>
+        <li><a href="#none">회원가입</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+<style>
+
+/* 메뉴 ===========================================================================================================================================================*/
+.menu{}
+
+.menu > div{max-width:1200px; margin:0 auto;}
+.menu > div > ul {text-align:center;}	/*ul가운데 정렬*/
+.menu > div > ul > li{display:inline-block;} /*요소들을 가운데 정렬*/
+
+.menu > div > ul > li > a{display:block; padding:10px; font-size:17px; margin:10px 40px;}	/*간격지정*/
+.menu > div > ul > li > a:hover{color:#25a5ff}	/*메뉴 커서 눌렀을때 알아보기 쉽게 색상 변경*/
+
+</style>
+
+
+<!--메뉴-->
+<div class = "menu">
+  <div>
+    <ul>
+      <li><a href="#none">회사소개</a></li>
+      <li><a href="#none">게시판</a></li>
+      <li><a href="#none">장소예약</a></li>
+      <li><a href="#none">마이페이지</a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+/* 상단 배너 ===========================================================================================================================================================*/
+.banner .swiper-container{max-width:1200px; margin:0 auto;}
+</style>
+
+
+<!--상단 배너-->
+<div class = "banner">
+
+
+  <!-- Swiper -->
+  <div class="swiper-container">
+
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="./img/banner01.jpg"></div>
+      <div class="swiper-slide"><img src="./img/01.jfif"></div>
+      <div class="swiper-slide"><img src="./img/02.jfif"></div>
+      <div class="swiper-slide"><img src="./img/03.jfif"></div>
+    </div>
+
+
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+
+
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+  </div>
+
+
+  <!-- Initialize Swiper -->
+  <script>
+  var swiper = new Swiper('.swiper-container', {
+
+  navigation: {
+  nextEl: '.swiper-button-next',
+  prevEl: '.swiper-button-prev',
+  },
+
+  pagination: {
+  el: '.swiper-pagination',
+  },
+
+  autoplay: {
+  delay: 2500,
+  disableOnInteraction: false,
+  },
+
+  });
+  </script>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<style>
+/* 메인 게시물 ===========================================================================================================================================================*/
+
+.tab-menu ul{overflow:hidden; text-align:center;}
+.tab-menu ul li{float:left; width:33.33%}
+.tab-menu ul li a{display:block; padding:5px 10px; background:#f5f5f5;}
+.tab-menu ul li.on a{color:#057bf5; font-weight:bold;}
+.tab-menu ul li:hover a{color:#057bf5;}
+
+
+.tab-con{}
+.tab-con ul li{overflow:hidden;}
+.tab-con ul li a{float:left; display:block; padding:5px;}
+.tab-con ul li span{float:right; padding:5px; font-size:13px; color:#888;}
+
+
+.bbs-box > div{overflow:hidden; max-width:1200px; margin:0 auto;}
+.bbs-box > div > .board-box{float:left; width:40%;}
+.bbs-box > div > .board-box > div{padding:10px;}
+.bbs-box > div > .right-banner{float:right; width:60%;}
+.bbs-box > div > .right-banner .r-slide{padding:10px;}
+
+</style>
+
+
+<!--메인 게시물-->
+<div class = "bbs-box">
+
+
+
+  <div>
+    <div class = "board-box">
+
+      <div class = "tab-menu">
+        <ul>
+          <li class="on"><a href = "#none">공지사항</a></li>
+          <li><a href = "#none">자유게시판</a></li>
+          <li><a href = "#none">갤러리</a></li>
+        </ul>
+      </div>
+
+      <div class = "tab-con">
+        <ul>
+          <li><a href = "#none">공지사항 입니다....</a><span>2021.04.19</span></li>
+          <li><a href = "#none">공지사항 입니다....</a><span>2021.04.19</span></li>
+          <li><a href = "#none">공지사항 입니다....</a><span>2021.04.19</span></li>
+          <li><a href = "#none">공지사항 입니다....</a><span>2021.04.19</span></li>
+        </ul>
+      </div>
+
+    </div>
+
+
+
+    <div class = "right-banner">
+      <!-- Swiper -->
+      <div class="swiper-container r-slide">
+
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./img/banner01.jpg"></div>
+          <div class="swiper-slide"><img src="./img/banner01.jpg"></div>
+
+        </div>
+
+
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+
+
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+      </div>
+
+
+      <!-- Initialize Swiper -->
+      <script>
+      var swiper = new Swiper('.r-slide', {
+
+      navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+      },
+
+      pagination: {
+      el: '.swiper-pagination',
+      },
+
+      autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+      },
+
+      });
+      </script>
+
+
+    </div>
+  </div>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style>
+/* 하단 정보 ===========================================================================================================================================================*/
+</style>
+
+
+
+<!--하단 정보-->
+<div class = "footer">
+
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
