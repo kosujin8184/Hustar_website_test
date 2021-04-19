@@ -58,11 +58,68 @@ img{max-width:100%; height:auto;}
 .header .top-btn ul li{float:left; margin-left:10px;}	/*로그인 회원가입 버튼 부분*/
 .header .top-btn ul li a{display:block; padding:5px;}
 
+
+
+
+/* 메뉴 ===============================================================================================================================================================*/
+.menu{}
+
+.menu > div{max-width:1200px; margin:0 auto;}
+.menu > div > ul {text-align:center;}	/*ul가운데 정렬*/
+.menu > div > ul > li{display:inline-block;} /*요소들을 가운데 정렬*/
+
+.menu > div > ul > li > a{display:block; padding:10px; font-size:17px; margin:10px 40px;}	/*간격지정*/
+.menu > div > ul > li > a:hover{color:#25a5ff}	/*메뉴 커서 눌렀을때 알아보기 쉽게 색상 변경*/
+
+
+
+
+/* 상단 배너 ===========================================================================================================================================================*/
+.banner .swiper-container{max-width:1200px; margin:0 auto;}
+
+
+
+/* 메인 게시물 ===========================================================================================================================================================*/
+
+.tab-menu ul{overflow:hidden; text-align:center;}
+.tab-menu ul li{float:left; width:33.33%}
+.tab-menu ul li a{display:block; padding:5px 10px; border-bottom: 1px solid #e1e1e1; font-size:14px; color: #888;}
+.tab-menu ul li.on a{color:#057bf5; font-weight:bold; border-bottom: 1px solid #057bf5;}
+.tab-menu ul li:hover a{color:#057bf5;}
+
+
+.tab-con{}
+.tab-con ul li{overflow:hidden;}
+.tab-con ul li:hover{border-bottom: 1px dashed #e1e1e1;}
+.tab-con ul li a{float:left; display:block; padding:5px; font-size:15px;}
+.tab-con ul li a:before{content:""; display:inline-block; width:3px; height:3px; background: #ccc; 
+-webkit-border-radius: 50%; -moz-border-radius: 50% ;
+border-radius: 50%;
+vertical-align: middle; margin-right: 5px;}
+.tab-con ul li span{float:right; padding:5px; font-size:13px; color:#888;}
+
+
+.bbs-box > div{overflow:hidden; max-width:1200px; margin:0 auto;}
+.bbs-box > div > .board-box{float:left; width:40%;}
+.bbs-box > div > .board-box > div{padding:10px;}
+.bbs-box > div > .right-banner{float:right; width:60%;}
+.bbs-box > div > .right-banner .r-slide{padding:10px;}
+
+
+
+/* 하단 정보 ===========================================================================================================================================================*/
+.footer{background: #444; color:#ccc;}
+.footer > div{padding: 20px;}
+.footer h1{font-size: 17px; margin-bottom: 10px;}
+.footer p{font-size:13px; line-height: 160%; padding:0; margin:0;}
+.footer span{font-size:12px; color:#999;}
+
+
 </style>
 
 
 
-<!--상단헤더-->
+<!--상단헤더--------------------------------------------------------------------------------------------------------------------------------------------->
 <!---div는 영역을 지정하는것, class는 그 이름을 지정-->
 <div class = "header">
   <div>
@@ -86,24 +143,7 @@ img{max-width:100%; height:auto;}
 
 
 
-
-
-<style>
-
-/* 메뉴 ===========================================================================================================================================================*/
-.menu{}
-
-.menu > div{max-width:1200px; margin:0 auto;}
-.menu > div > ul {text-align:center;}	/*ul가운데 정렬*/
-.menu > div > ul > li{display:inline-block;} /*요소들을 가운데 정렬*/
-
-.menu > div > ul > li > a{display:block; padding:10px; font-size:17px; margin:10px 40px;}	/*간격지정*/
-.menu > div > ul > li > a:hover{color:#25a5ff}	/*메뉴 커서 눌렀을때 알아보기 쉽게 색상 변경*/
-
-</style>
-
-
-<!--메뉴-->
+<!--메뉴--------------------------------------------------------------------------------------------------------------------------------------------->
 <div class = "menu">
   <div>
     <ul>
@@ -122,17 +162,7 @@ img{max-width:100%; height:auto;}
 
 
 
-
-
-
-
-<style>
-/* 상단 배너 ===========================================================================================================================================================*/
-.banner .swiper-container{max-width:1200px; margin:0 auto;}
-</style>
-
-
-<!--상단 배너-->
+<!--상단 배너--------------------------------------------------------------------------------------------------------------------------------------------->
 <div class = "banner">
 
 
@@ -185,42 +215,7 @@ img{max-width:100%; height:auto;}
 
 
 
-
-
-
-
-<style>
-/* 메인 게시물 ===========================================================================================================================================================*/
-
-.tab-menu ul{overflow:hidden; text-align:center;}
-.tab-menu ul li{float:left; width:33.33%}
-.tab-menu ul li a{display:block; padding:5px 10px; border-bottom: 1px solid #e1e1e1; font-size:14px; color: #888;}
-.tab-menu ul li.on a{color:#057bf5; font-weight:bold; border-bottom: 1px solid #057bf5;}
-.tab-menu ul li:hover a{color:#057bf5;}
-
-
-.tab-con{}
-.tab-con ul li{overflow:hidden;}
-.tab-con ul li:hover{border-bottom: 1px dashed #e1e1e1;}
-.tab-con ul li a{float:left; display:block; padding:5px; font-size:15px;}
-.tab-con ul li a:before{content:""; display:inline-block; width:3px; height:3px; background: #ccc; 
--webkit-border-radius: 50%; -moz-border-radius: 50% ;
-border-radius: 50%;
-vertical-align: middle; margin-right: 5px;}
-.tab-con ul li span{float:right; padding:5px; font-size:13px; color:#888;}
-
-
-.bbs-box > div{overflow:hidden; max-width:1200px; margin:0 auto;}
-.bbs-box > div > .board-box{float:left; width:40%;}
-.bbs-box > div > .board-box > div{padding:10px;}
-.bbs-box > div > .right-banner{float:right; width:60%;}
-.bbs-box > div > .right-banner .r-slide{padding:10px;}
-
-</style>
-
-
-
-<!--메인 게시물-->
+<!--메인 게시물-------------------------------------------------------------------------------------------------------------------------------------------------------->
 <div class = "bbs-box">
 
 
@@ -307,18 +302,16 @@ vertical-align: middle; margin-right: 5px;}
 
 
 
-
-
-
-
-<style>
-/* 하단 정보 ===========================================================================================================================================================*/
-</style>
-
-
-
-<!--하단 정보-->
+<!--하단 정보--------------------------------------------------------------------------------------------------------------------------------------------->
 <div class = "footer">
+	<div>
+		<h1>HUSTAR_ICT_ACADEMY</h1>
+		<p>대구 동구 동내로 70</p>
+		<p>대표자 : Mr.Ko</p>
+		<p>이메일 : hustar02@xxxx.com</p>
+		<p>연락처 : 010-1234-1234</p>
+		<span>copyright(c) HUSTAR_ICT_ACADEMY. All rights reserved</span>
+	</div>
 
 </div>
 
