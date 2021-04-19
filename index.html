@@ -141,9 +141,7 @@ img{max-width:100%; height:auto;}
 
     <div class="swiper-wrapper">
       <div class="swiper-slide"><img src="./img/banner01.jpg"></div>
-      <div class="swiper-slide"><img src="./img/01.jfif"></div>
-      <div class="swiper-slide"><img src="./img/02.jfif"></div>
-      <div class="swiper-slide"><img src="./img/03.jfif"></div>
+      <div class="swiper-slide"><img src="./img/banner01.jpg"></div>
     </div>
 
 
@@ -196,14 +194,19 @@ img{max-width:100%; height:auto;}
 
 .tab-menu ul{overflow:hidden; text-align:center;}
 .tab-menu ul li{float:left; width:33.33%}
-.tab-menu ul li a{display:block; padding:5px 10px; background:#f5f5f5;}
-.tab-menu ul li.on a{color:#057bf5; font-weight:bold;}
+.tab-menu ul li a{display:block; padding:5px 10px; border-bottom: 1px solid #e1e1e1; font-size:14px; color: #888;}
+.tab-menu ul li.on a{color:#057bf5; font-weight:bold; border-bottom: 1px solid #057bf5;}
 .tab-menu ul li:hover a{color:#057bf5;}
 
 
 .tab-con{}
 .tab-con ul li{overflow:hidden;}
-.tab-con ul li a{float:left; display:block; padding:5px;}
+.tab-con ul li:hover{border-bottom: 1px dashed #e1e1e1;}
+.tab-con ul li a{float:left; display:block; padding:5px; font-size:15px;}
+.tab-con ul li a:before{content:""; display:inline-block; width:3px; height:3px; background: #ccc; 
+-webkit-border-radius: 50%; -moz-border-radius: 50% ;
+border-radius: 50%;
+vertical-align: middle; margin-right: 5px;}
 .tab-con ul li span{float:right; padding:5px; font-size:13px; color:#888;}
 
 
@@ -214,6 +217,7 @@ img{max-width:100%; height:auto;}
 .bbs-box > div > .right-banner .r-slide{padding:10px;}
 
 </style>
+
 
 
 <!--메인 게시물-->
@@ -308,7 +312,7 @@ img{max-width:100%; height:auto;}
 
 
 <style>
-/* 하단 정보 =============================================================================================================================================================*/
+/* 하단 정보 ===========================================================================================================================================================*/
 </style>
 
 
