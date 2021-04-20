@@ -277,24 +277,3 @@ vertical-align: middle; margin-right: 5px;}
 .bbs-btn-box a.mod{background: #c61616;}
 .bbs-btn-box a.mod{display:inline-block; border-radius: 5px;  transition:all 0.3s;}
 .bbs-btn-box a.mod:hover{background: #595252; border-radius: 0px;}
-
-
-
-
-
-
-
-
-/* 갤러리 페이지 구성 ===========================================================================================================================================================*/
-.gallery-table > ul{overflow:hidden;}
-
-.gallery-table > ul > li{width: 20%; float:left; margin-bottom:20px;}
-.gallery-table > ul > li:nth-child(5n+1){clear:both;}
-.gallery-table > ul > li > div{padding:10px;}
-
-.gallery-table .thum{padding-bottom:0; height:220px; overflow:hidden;}
-.gallery-table .thum img{}
-
-.gallery-table .info a{display:block; font-size:15px;}
-.gallery-table .info span{color:#888;}
-
