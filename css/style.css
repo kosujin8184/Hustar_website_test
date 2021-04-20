@@ -58,7 +58,7 @@ a {color:#000;text-decoration:none}
 /* 메뉴 ===============================================================================================================================================================*/
 .menu{}
 
-.menu > div{max-width:1200px; margin:0 auto; background: #fff;}
+.menu > div{max-width:100%; margin:0 auto; background: #fff;}
 .menu > div > ul {text-align:center;}	/*ul가운데 정렬*/
 .menu > div > ul > li{display:inline-block; position:relative;} /*요소들을 가운데 정렬, position:relative(li가 기준이된다.)*/
 
@@ -69,7 +69,9 @@ a {color:#000;text-decoration:none}
 .menu > div > ul > li > ul.submenu{position:absolute; z-index:9; background: #fff; display:none; width:100%;} /*z-index숫자 높을수록 상위로온다*/
 .menu > div > ul > li:hover ul.submenu{display:block; }
 .menu > div > ul > li ul.submenu a{display:block; padding:10px; font-size:17px;} /*블락이 없다고 생각해야하므로 display:block로 잡아준다.*/
+.menu > div > ul > li ul.submenu a:hover{color:#c61616}
 .menu > div > ul li:hover{border-bottom: 1px dashed #c61616;}
+
 
 
 
@@ -145,7 +147,7 @@ vertical-align: middle; margin-right: 5px;}
 /* 회원가입 페이지 구성 ===========================================================================================================================================================*/
 .join-box{padding:30px;}
 .join-box .join-form label{display:block;}
-.join-box h1{text-align:center; margin-bottom:20px; font-size:25px;}
+.join-box h1{text-align:center; margin-bottom:20px; font-size:30px;}
 
 .join-box .join-form{max-width:400px; margin:0 auto; background: #fff; border: 1px solid #ccc; border-radius:25px; padding:20px;}
 
@@ -224,3 +226,18 @@ vertical-align: middle; margin-right: 5px;}
 .bbs-btn-box{text-align:right; margin: 10px 0;}
 .bbs-btn-box a{display: inline-block; background: #000; color:#fff; padding:5px 10px;}
 
+
+
+
+
+/* 글쓰기 페이지 구성 ===========================================================================================================================================================*/
+.write-form{max-width:800px; margin: 0 auto;}
+.write-form label{display: inline-block; vertical-align: middle;} /*가로로정렬inline-block (세로면 block)*/
+.write-form input[type="text"]{width:100%; border:1px solid #ccc; height:30px;}
+.write-form textarea{width:100%; border:1px solid #ccc; height:150px; vertical-align: middle;}
+.write-form label.check-txt{display: inline-block;}
+.write-form li{margin-bottom:10px; border-bottom: 1px solid #ccc;}
+
+.write-form li.chk-box{background: #fff; padding:10px; border-top:1px solid #ccc; border-bottom:1px solid #ccc; }
+
+.write-f-btn{max-width:800px; margin:20px auto;}
