@@ -63,28 +63,6 @@
 
 
 
-<style>
-.adm-table{background: #fff;}
-.adm-table ul.table-hd{text-align:center; border-top: 2px solid #000;}
-.adm-table ul.table-bd{text-align:center;}
-.adm-table ul.table-bd .name{text-align:left;}
-
-/*table표를 지정*/
-.adm-table ul li{display:table; width:100%;}
-.adm-table ul li > div{display: table-cell; border-bottom: 1px solid #ccc; padding: 10px;}	/*table-cell은 표처럼 행동하는 형식*/
-
-/*각 cell마다 정리하는 부분*/
-.adm-table ul li > div.name a:hover{text-decoration:underline; color: #000;}
-
-.adm-table ul li > div.no{width:7%;}
-.adm-table ul li > div.name{width:10%;}
-.adm-table ul li > div.phone{width:15%;}
-.adm-table ul li > div.email{width:15%;}
-.adm-table ul li > div.birthdate{width:10%;}
-.adm-table ul li > div.addr{width:23%;}
-.adm-table ul li > div.date{width:10%;}
-.adm-table ul li > div.admstate{width:10%;}
-</style>
 
 
 
@@ -99,20 +77,17 @@
 			<button>검색</button>
 		</div>
 
-
-
-
 		<div class="adm-table">
 			<ul class="table-hd">
 				<li>
 					<div class ="no">번호</div>
                     <div class ="name">이름</div>
-                    <div class ="phone">연락처</div>
+                    <div class ="tel">연락처</div>
                     <div class ="email">이메일</div>
-                    <div class ="birthdate">생년월일</div>
+                    <div class ="birthday">생년월일</div>
                     <div class ="addr">주소</div>
 					<div class ="date">등록일</div>
-                    <div class ="admstate">관리</div>
+                    <div class ="set-btn">관리</div>
                     
 				</li>
 			</ul>
@@ -121,34 +96,43 @@
 				<li>
 					<div class ="no">1</div>
 					<div class ="name"><a href="#none">김승태</a></div>
-                    <div class ="phone">일반</div>
+                    <div class ="tel">010-1234-1234</div>
                     <div class ="email">kst@naver.com</div>
-                    <div class ="birthdate">생년월일</div>
+                    <div class ="birthday">생년월일</div>
                     <div class ="addr">서울</div>
 					<div class ="date">2021.04.21</div>
-                    <div class ="admstate">수정 삭제</div>
+                    <div class ="set-btn">
+						<a href="./member_form.html">수정	</a>
+						<a href="">삭제	</a>
+					</div>
                    
 				</li>
 				<li>
 					<div class ="no">2</div>
 					<div class ="name"><a href="#none">정예성</a></div>
-                    <div class ="phone">갤러리</div>
+                    <div class ="tel">010-1234-1234</div>
                     <div class ="email">jjs@naver.com</div>
-                    <div class ="birthdate">1996.12.05</div>
+                    <div class ="birthday">1996.12.05</div>
                     <div class ="addr">구미</div>
 					<div class ="date">2021.04.21</div>
-                    <div class ="admstate">수정 삭제</div>
+                    <div class ="set-btn">
+						<a href="./member_form.html">수정	</a>
+						<a href="">삭제	</a>
+					</div>
                     
 				</li>
 				<li>
 					<div class ="no">3</div>
 					<div class ="name"><a href="#none">김도연</a></div>
-                    <div class ="phone">일반</div>
+                    <div class ="tel">010-1234-1234</div>
                     <div class ="email">kdy@naver.com</div>
-                    <div class ="birthdate">1997.03.14</div>
+                    <div class ="birthday">1997.03.14</div>
                     <div class ="addr">대구</div>
 					<div class ="date">2021.04.21</div>
-                    <div class ="admstate">수정 삭제</div>
+                    <div class ="set-btn">
+						<a href="./member_form.html">수정	</a>
+						<a href="">삭제	</a>
+					</div>
                    
 				</li>
                
@@ -172,7 +156,7 @@
 
 
 	    <div class="bbs-btn-box">
-			<a href="../adm/board_write.html">회원등록</a>
+			<a href="./member_form.html">회원등록</a>
 		</div>
 
 
