@@ -292,9 +292,26 @@ vertical-align: middle; margin-right: 5px;}
 .gallery-table > ul > li:nth-child(5n+1){clear:both;}
 .gallery-table > ul > li > div{padding:10px;}
 
-.gallery-table .thum{padding-bottom:0; height:220px; overflow:hidden;}
-.gallery-table .thum img{}
+.gallery-table .thum a{padding-bottom:0; height:220px; overflow:hidden;}
+.gallery-table .thum img{max-height:220px;}
 
 .gallery-table .info a{display:block; font-size:15px;}
 .gallery-table .info span{color:#888;}
 
+
+
+
+
+/* 장소예약 리스트 구성 ===========================================================================================================================================================*/
+.booking-table > ul{overflow:hidden;}
+.booking-table > ul > li{margin-bottom:20px; overflow:hidden; background:#fff; border: 1px solid #fff;}
+.booking-table > ul > li > div{padding:10px; float: left;}
+
+.booking-table .thum{text-align:center; width:15%;}
+.booking-table .thum a{display:block; padding:5px; background:#fff; border: 1px solid #e1e1e1; overflow:hidden;}
+.booking-table .thum img{max-height:220px;}
+
+.booking-table .info{width:85%;}
+.booking-table .info a{display:block; font-size:17px;}
+.booking-table .info p{font-size:14px; color:#444; margin:10px 0; max-height: 55px; overflow:hidden; min-height:55px;} /*overflow:hidden을 줘서 글자가 넘쳐도 가려지게.*/
+.booking-table .info span{color:#888;}
