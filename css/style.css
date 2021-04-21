@@ -123,13 +123,13 @@ vertical-align: middle; margin-right: 5px;}
 
 
 /* 하단 정보 ===========================================================================================================================================================*/
-.footer{background: #000; color:#ccc;}
+.footer{position: fixed; left: 0; right: 0; bottom: 0; width: 100%;background: #000; color:#ccc;}
 .footer > div{padding: 20px;}
 .footer h1{font-size: 17px; margin-bottom: 10px;}
 .footer p{font-size:13px; line-height: 160%; padding:0; margin:0;}
 .footer span{font-size:12px; color:#999;}
 
-
+body{padding-bottom: 170px;}
 
 
 
@@ -214,12 +214,9 @@ vertical-align: middle; margin-right: 5px;}
 .notice-table ul li > div.name{width:20%;}
 .notice-table ul li > div.date{width:20%;}
 
-/*이렇게 쓰면 class안주고 쓰기 가능 (단, 위랑 같지만 순서가 정해져있음)
-.notice-table ul li > div:nth-child(1){width:10%;}
-.notice-table ul li > div:nth-child(2){width:50%;}
-.notice-table ul li > div:nth-child(3){width:20%;}
-.notice-table ul li > div:nth-child(4){width:20%;}
-*/
+
+
+
 
 
 /*페이지선택버튼*/
@@ -315,3 +312,37 @@ vertical-align: middle; margin-right: 5px;}
 .booking-table .info a{display:block; font-size:17px;}
 .booking-table .info p{font-size:14px; color:#444; margin:10px 0; max-height: 55px; overflow:hidden; min-height:55px;} /*overflow:hidden을 줘서 글자가 넘쳐도 가려지게.*/
 .booking-table .info span{color:#888;}
+
+
+
+
+
+
+
+
+
+
+
+/* 마이 페이지 구성 ===========================================================================================================================================================*/
+/*마이페이지 테이블*/
+.mypage-table{background: #fff;}
+.mypage-table ul.table-hd{text-align:center; border-top: 2px solid #000;}
+.mypage-table ul.table-bd{text-align:center;}
+.mypage-table ul.table-bd .subject{text-align:left;}
+
+/*table표를 지정*/
+.mypage-table ul li{display:table; width:100%;}
+.mypage-table ul li > div{display: table-cell; border-bottom: 1px solid #ccc; padding: 10px;}	/*table-cell은 표처럼 행동하는 형식*/
+
+/*각 cell마다 정리하는 부분*/
+.mypage-table ul li > div.no{width:10%;}
+.mypage-table ul li > div.subject{width:50%;}
+.mypage-table ul li > div.subject a{font-size:14px; font-weight:bold;}
+.mypage-table ul li > div.subject a:hover{text-decoration:underline; color: #000;}
+.mypage-table ul li > div.name{width:10%;}
+.mypage-table ul li > div.state{width:10%;}
+.mypage-table ul li > div.date1{width:10%;}
+.mypage-table ul li > div.date2{width:10%;}
+.mypage-table ul li > div.state span.ok{color: blue; font-weight: bold;}
+.mypage-table ul li > div.state span.cancel{color: red; font-weight: bold;}
+.mypage-table ul li > div.state span.backok{color: orange; font-weight: bold;}

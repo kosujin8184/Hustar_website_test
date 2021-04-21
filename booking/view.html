@@ -85,14 +85,16 @@
    <div class="notice-box">
       <h1>장소예약 상세보기</h1>
 
+
 <style>
     .booking-view{}
+    .booking-view .photo-box{}
+    .booking-view .photo-box > div{}
 
-    .booking-view > div{border: 1px solid red; padding: 10px;}
+
     .booking-view .photo-box{overflow: hidden;}
-    .booking-view .photo-box > div{border: 1px solid black; padding: 20px;}
-    .booking-view .photo-box .view-photo{float: left; width: 50%;}
-    .booking-view .photo-box .calendar{float: left; width: 50%;}
+    .booking-view .photo-box .view-photo{float: left; width: 50%; height:310px; padding: 5px; margin-top:70px;}
+    .booking-view .photo-box .calendar{float: left; width: 50%;  height:310px; padding: 5px;}
 
 </style>
 
@@ -148,20 +150,30 @@
 
 
  <style>
+ .cal-box{border:1px solid #ccc; background:#fff;}
  .cal-box ul{ overflow:hidden; padding:5px;}
  .cal-box ul li{float: left; width: 14.28%; text-align:center;}
  .cal-box ul li:first-child a span{color:#ff4c4c;} /*첫번째 열 빨간색으로*/
  .cal-box ul li:last-child a span{color:#1499d1;} /*마지막 열 파란색으로*/
- /*위에거 이렇게 해도 됨.
- .cal-box ul li:nth-child(1){}
- .cal-box ul li:nth-child(2){}
- .cal-box ul li:nth-child(3){}
- .cal-box ul li:nth-child(4){}
- .cal-box ul li:nth-child(5){}
- .cal-box ul li:nth-child(6){}
- .cal-box ul li:nth-child(7){}
- */
+ 
+ .cal-box ul li a{display:block; padding:7px 5px;}
+ .cal-box ul li a span.off{color:#aaa;}
+ .cal-box ul li a span.today{color:#fff; background:#46c16c; padding:5px; border-radius:100px;}
+ .cal-box ul li a span.selected{color:#fff; background:#000; padding:5px; border-radius:100px;}
+ .cal-box ul li a span:hover{color:#fff; background:#000; padding:5px;  border-radius:100px;}
+
+ .cal-hd{text-align:center;}
+ .cal-hd span{margin:10px; display:inline-block; padding:10px;}
+ .cal-hd span.month{font-size:19px; font-weight:bold;}
  </style>          
+
+
+
+                    <div class ="cal-hd">
+                        <span><a href="#none">이전달</a></span>
+                        <span class="month">2021.04</span>
+                        <span><a href="#none">다음달</a></span>
+                    </div>
 
 
                     <div class ="cal-box">
@@ -175,10 +187,10 @@
                             <li><a href="#none"><span>토</span></a></li>
                         </ul>
                         <ul>
-                            <li><a href="#none"><span>28</span></a></li>
-                            <li><a href="#none"><span>29</span></a></li>
-                            <li><a href="#none"><span>30</span></a></li>
-                            <li><a href="#none"><span>31</span></a></li>
+                            <li><a href="#none"><span class="off">28</span></a></li>
+                            <li><a href="#none"><span class="off">29</span></a></li>
+                            <li><a href="#none"><span class="off">30</span></a></li>
+                            <li><a href="#none"><span class="off">31</span></a></li>
                             <li><a href="#none"><span>1</span></a></li>
                             <li><a href="#none"><span>2</span></a></li>
                             <li><a href="#none"><span>3</span></a></li>
@@ -205,9 +217,9 @@
                             <li><a href="#none"><span>18</span></a></li>
                             <li><a href="#none"><span>19</span></a></li>
                             <li><a href="#none"><span>20</span></a></li>
-                            <li><a href="#none"><span>21</span></a></li>
+                            <li><a href="#none"><span class = "today">21</span></a></li>
                             <li><a href="#none"><span>22</span></a></li>
-                            <li><a href="#none"><span>23</span></a></li>
+                            <li><a href="#none"><span class="selected">23</span></a></li>
                             <li><a href="#none"><span>24</span></a></li>
                         </ul>
                         <ul>
@@ -227,21 +239,25 @@
             </div>
 
 
+<style>
+.view-btn{text-align:right; padding:5px;}
+.view-btn a{display: inline-block; padding: 5px 10px; background:#000; color:#fff; tansition:all 0.3s;}
+.view-btn a:hover{background:#26648e; border-radius:20px;}
 
+.view-detail{background:#fff; border:1px solid #ccc; margin:10px 5px; padding:20px; min-height:200px;}
+</style>
 
             <div class="view-btn">
-
+                <a href="#none">예약하기</a>
             </div>
+
             <div class="view-detail">
+                <p>상세설명 입니다. 정예성 왜 안와</p>
 
             </div>
+            
         </div>
 
-
-        
-        <div class="bbs-btn-box">
-            <a href="../bbs/gallery_write.html">글쓰기</a>
-        </div>
    </div>
   </div>
 </div>
