@@ -468,7 +468,7 @@ body{padding-bottom: 170px;}
 .adm-board-box h1{text-align: center; margin:20px 0;}
 
 .write-form{max-width:800px; margin: 0 auto;}
-.write-form label{display: block;} /*가로로정렬inline-block (세로면 block)*/
+.write-form label{display:block;} /*가로로정렬inline-block (세로면 block)*/
 .write-form input[type="text"]{width:100%; border:1px solid #ccc; height:30px;}
 .write-form textarea{width:100%; border:1px solid #ccc; height:150px; vertical-align: middle;}
 
@@ -476,7 +476,7 @@ body{padding-bottom: 170px;}
 .write-form li{margin-bottom:10px;}
 .write-form li.chk-box{background: 0; padding:10px; border-top:1px solid #ccc; border-bottom:1px solid #ccc; }
 .write-f-btn{max-width:800px; margin:20px auto;}
-.write-form select{width: 100%; border:1px solid #ccc ; height:30px;}
+.write-form select{width: 40%; border:1px solid #ccc ; height:30px;}
 
 .bbs-btn-box{text-align:right; margin:10px auto;}
 .bbs-btn-box a{display:inline-block; background:#000; color:#fff; padding:5px 10px;}
