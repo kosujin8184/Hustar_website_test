@@ -462,17 +462,21 @@ body{padding-bottom: 170px;}
 
 
 
+/* 관리자 게시판생성 페이지 board_form.html ==========================================================================================================================*/
 
+.adm-contents{max-width:1200px; margin: 0 auto;}
+.adm-board-box h1{text-align: center; margin:20px 0;}
 
+.write-form{max-width:800px; margin: 0 auto;}
+.write-form label{display: block;} /*가로로정렬inline-block (세로면 block)*/
+.write-form input[type="text"]{width:100%; border:1px solid #ccc; height:30px;}
+.write-form textarea{width:100%; border:1px solid #ccc; height:150px; vertical-align: middle;}
 
+.write-form label.check-txt{display: inline-block;}
+.write-form li{margin-bottom:10px;}
+.write-form li.chk-box{background: 0; padding:10px; border-top:1px solid #ccc; border-bottom:1px solid #ccc; }
+.write-f-btn{max-width:800px; margin:20px auto;}
+.write-form select{width: 100%; border:1px solid #ccc ; height:30px;}
 
-/* 관리자 게시판생성 페이지 board_write.html ==========================================================================================================================*/
-.board-admin-box{padding:30px;}
-.board-admin-box .write-form label{display:block;}
-.board-admin-box h1{text-align:center; margin-bottom:20px; font-size:30px;}
-
-.board-admin-box .write-form{max-width:800px; margin:0 auto; padding:20px;}
-
-
-.board-admin-box .write-form li.chk-box{background: #fff; padding:10px; border-top:1px solid #ccc; border-bottom:1px solid #ccc; }
-.board-admin-box .write-form li.chk-box label{display: inline-block;}
+.bbs-btn-box{text-align:right; margin:10px auto;}
+.bbs-btn-box a{display:inline-block; background:#000; color:#fff; padding:5px 10px;}
