@@ -319,14 +319,14 @@ body{padding-bottom: 170px;}
 
 
 /* Bookin - View - 포토박스 구성 ===========================================================================================================================================================*/
-    .booking-view{}
-    .booking-view .photo-box{}
-    .booking-view .photo-box > div{}
+.booking-view{}
+.booking-view .photo-box{}
+.booking-view .photo-box > div{}
 
 
-    .booking-view .photo-box{overflow: hidden;}
-    .booking-view .photo-box .view-photo{float: left; width: 50%; height:310px; padding: 5px; margin-top:70px;}
-    .booking-view .photo-box .calendar{float: left; width: 50%;  height:310px; padding: 5px;}
+.booking-view .photo-box{overflow: hidden;}
+.booking-view .photo-box .view-photo{float: left; width: 50%; height:310px; padding: 5px; margin-top:70px;}
+.booking-view .photo-box .calendar{float: left; width: 50%;  height:310px; padding: 5px;}
 
 
 
@@ -382,3 +382,97 @@ body{padding-bottom: 170px;}
 .mypage-table ul li > div.state span.cancel{color: red; font-weight: bold; text-decoration: line-through;}
 .mypage-table ul li > div.state span.notok{color: orange; font-weight: bold;}
 /*.mypage-table ul li > div.state.notok{color: orange; font-weight: bold;} 클래스가 div안에 있다면 이렇게 해도됨*/
+
+
+
+
+
+
+
+
+/* 관리자 환경설정 페이지 set.html ===========================================================================================================================================================*/
+.adm-menu{background: #fff; border-bottom: 1px solid #e1e1e1}
+.adm-menu ul{text-align: center;}
+.adm-menu ul li{display: inline-block; margin:5px; border: 0px solid red;}
+
+.adm-menu ul li:before{content:""; display:inline-block; width:1px; height:10px; background:#000; margin-right:15px;}
+.adm-menu ul li:last-child:after{content:""; display:inline-block; width:1px; height:10px; background:#000; margin-left:15px;}
+/*.adm-menu ul li:first-child:after{content:""; display:none;}*/
+
+.adm-menu ul li a{display:inline-block; padding: 5px 10px; background: #fff; color: #000;}
+.adm-menu ul li a:hover{color:#26649e; font-weight:bold;}
+.adm-menu ul li.on a{color: #26649e; font-weight:bold;}
+
+
+
+.adm-set{padding:50px;}
+.adm-set h1{text-align:center; margin-bottom:20px; font-size:30px;}
+.adm-set .join-form label{display:block;}
+
+.adm-set .join-form{max-width:800px; margin:0 auto; }
+
+.adm-set .join-form input[type="text"]{width:100%; height:40px; border: 1px solid #ccc; padding:5px;} /*모든 인풋에게 해당하게 안하기위해[text=""]*/
+.adm-set .join-form input[type="password"]{width:100%; height:40px; border: 1px solid #ccc; padding:5px;} /*모든 인풋에게 해당하게 안하기위해[text=""]*/
+
+.adm-set .join-form select{width:100%; height:40px; border: 1px solid #ccc; padding:5px;}
+
+.adm-set .join-form ul li{margin-bottom:10px;}
+.adm-set .join-form ul li label{font-size:12px; color:#888; margin-bottom:3px;}
+
+.adm-set .join-form ul li.addr span.zipcode input{width:150px;}
+.adm-set .join-form ul li.addr span.zipcode button{width:100px; height:40px; background: #595252; color:#fff; border:0; border-radius: 5px; margin-left:10px; transition:all 0.3s;}
+.adm-set .join-form ul li.addr span.zipcode button:hover{background: #000; border-radius: 0px;}
+.adm-set .join-form ul li.addr span{margin-bottom:5px; display:block;}
+
+
+.adm-set .join-btn{text-align:center;}
+.adm-set .join-btn a{display:inline-block; background: #595252; color: #fff; margin:5px; padding:10px 0px;border-radius: 5px; width:100px; transition:all 0.3s;}
+.adm-set .join-btn a:hover{background: #000; border-radius: 0px;}
+
+
+
+
+
+
+
+
+
+/* 관리자 게시판관리 페이지 board.html ==========================================================================================================================*/
+.adm-table{background: #fff;}
+.adm-table ul.table-hd{text-align:center; border-top: 2px solid #000;}
+.adm-table ul.table-bd{text-align:center;}
+.adm-table ul.table-bd .name{text-align:left;}
+
+/*table표를 지정*/
+.adm-table ul li{display:table; width:100%;}
+.adm-table ul li > div{display: table-cell; border-bottom: 1px solid #ccc; padding: 10px;}	/*table-cell은 표처럼 행동하는 형식*/
+
+/*각 cell마다 정리하는 부분*/
+.adm-table ul li > div.name{width:50%;}
+.adm-table ul li > div.name a{font-size:14px; font-weight:bold;}
+.adm-table ul li > div.name a:hover{text-decoration:underline; color: #000;}
+.adm-table ul li > div.no{width:10%;}
+.adm-table ul li > div.name{width:10%;}
+.adm-table ul li > div.board-type{width:10%;}
+.adm-table ul li > div.date{width:10%;}
+.adm-table ul li > div.admstate{width:10%;}
+
+
+
+
+
+
+
+
+
+
+/* 관리자 게시판생성 페이지 board_write.html ==========================================================================================================================*/
+.board-admin-box{padding:30px;}
+.board-admin-box .write-form label{display:block;}
+.board-admin-box h1{text-align:center; margin-bottom:20px; font-size:30px;}
+
+.board-admin-box .write-form{max-width:800px; margin:0 auto; padding:20px;}
+
+
+.board-admin-box .write-form li.chk-box{background: #fff; padding:10px; border-top:1px solid #ccc; border-bottom:1px solid #ccc; }
+.board-admin-box .write-form li.chk-box label{display: inline-block;}
