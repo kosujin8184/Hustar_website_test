@@ -318,10 +318,44 @@ body{padding-bottom: 170px;}
 
 
 
+/* Bookin - View - 포토박스 구성 ===========================================================================================================================================================*/
+    .booking-view{}
+    .booking-view .photo-box{}
+    .booking-view .photo-box > div{}
+
+
+    .booking-view .photo-box{overflow: hidden;}
+    .booking-view .photo-box .view-photo{float: left; width: 50%; height:310px; padding: 5px; margin-top:70px;}
+    .booking-view .photo-box .calendar{float: left; width: 50%;  height:310px; padding: 5px;}
 
 
 
 
+
+
+
+/* Bookin - View - 캘린더 구성 ===========================================================================================================================================================*/
+ .cal-box{border:1px solid #ccc; background:#fff;}
+ .cal-box ul{ overflow:hidden; padding:5px;}
+ .cal-box ul li{float: left; width: 14.28%; text-align:center;}
+ .cal-box ul li:first-child a span{color:#ff4c4c;} /*첫번째 열 빨간색으로*/
+ .cal-box ul li:last-child a span{color:#1499d1;} /*마지막 열 파란색으로*/
+ 
+ .cal-box ul li a{display:block; padding:7px 5px;}
+ .cal-box ul li a span.off{color:#aaa;}
+ .cal-box ul li a span.today{color:#fff; background:#46c16c; padding:5px; border-radius:100px;}
+ .cal-box ul li a span.selected{color:#fff; background:#000; padding:5px; border-radius:100px;}
+ .cal-box ul li a span:hover{color:#fff; background:#000; padding:5px;  border-radius:100px;}
+
+ .cal-hd{text-align:center;}
+ .cal-hd span{margin:10px; display:inline-block; padding:10px;}
+ .cal-hd span.month{font-size:19px; font-weight:bold;}
+
+
+
+
+
+ 
 
 /* 마이 페이지 구성 ===========================================================================================================================================================*/
 /*마이페이지 테이블*/
@@ -335,14 +369,16 @@ body{padding-bottom: 170px;}
 .mypage-table ul li > div{display: table-cell; border-bottom: 1px solid #ccc; padding: 10px;}	/*table-cell은 표처럼 행동하는 형식*/
 
 /*각 cell마다 정리하는 부분*/
-.mypage-table ul li > div.no{width:10%;}
-.mypage-table ul li > div.subject{width:50%;}
+.mypage-table ul li > div.subject{width:40%;}
 .mypage-table ul li > div.subject a{font-size:14px; font-weight:bold;}
 .mypage-table ul li > div.subject a:hover{text-decoration:underline; color: #000;}
-.mypage-table ul li > div.name{width:10%;}
-.mypage-table ul li > div.state{width:10%;}
-.mypage-table ul li > div.date1{width:10%;}
-.mypage-table ul li > div.date2{width:10%;}
+.mypage-table ul li > div.no{width:15%;}
+.mypage-table ul li > div.state{width:15%;}
+.mypage-table ul li > div.date1{width:15%;}
+.mypage-table ul li > div.date2{width:15%;}
+
 .mypage-table ul li > div.state span.ok{color: blue; font-weight: bold;}
-.mypage-table ul li > div.state span.cancel{color: red; font-weight: bold;}
-.mypage-table ul li > div.state span.backok{color: orange; font-weight: bold;}
+.mypage-table ul li > div.state.wating{color: #ccc; font-weight: bold;}
+.mypage-table ul li > div.state span.cancel{color: red; font-weight: bold; text-decoration: line-through;}
+.mypage-table ul li > div.state span.notok{color: orange; font-weight: bold;}
+/*.mypage-table ul li > div.state.notok{color: orange; font-weight: bold;} 클래스가 div안에 있다면 이렇게 해도됨*/
