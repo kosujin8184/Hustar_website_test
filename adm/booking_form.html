@@ -6,7 +6,7 @@
 <meta name="Author" content="">
 <meta name="Keywords" content="">
 <meta name="Description" content="">
-<title>관리자페이지</title>
+<title>장소관리 페이지</title>
 
 
 <script src="../js/jquery-1.12.4.min.js"></script>
@@ -49,11 +49,11 @@
 <div class="adm-menu">
     <ul>
         <li><a href="./set.html">환경설정</a></li>
-        <li class="on"><a href="./board.html">게시판 관리</a></li>
+        <li><a href="./board.html">게시판 관리</a></li>
         <li><a href="./member.html">회원 관리</a></li>
         <li><a href="./popup.html">팝업 관리</a></li>
         <li><a href="./banner.html">배너 관리</a></li>
-        <li><a href="./booking.html">장소관리</a></li>
+        <li class="on"><a href="./booking.html">장소관리</a></li>
     </ul>
 </div>
 
@@ -65,36 +65,50 @@
   <div class="adm-board">
     <div class="adm-board-box">
 
-      <h1>게시판 생성</h1>
+      <h1>장소등록</h1>
 
 
 	  <div class="write-form">
 		<ul>
 			<li>
-				<label for="">게시판명</label>
+				<label for="">장소명</label>
 				<input type="text">
 			</li>
 
             <li>
-				<label for="">게시판 타입</label>
-				<select name="" id="">
-					<option value="">일반</option>
-					<option value="">갤러리</option>
-					<option value="">기타</option>
-				</select>
+				<label for="">사진 #01</label>
+				<input type="file">
+			
+			</li>
+            <li>
+				<label for="">사진 #02</label>
+				<input type="file">
+			
+			</li>
+            <li>
+				<label for="">사진 #03</label>
+				<input type="file">
+			
 			</li>
 
+            <li>
+                <label for="">상세설명</label>
+				<textarea name="" id="" ></textarea>
+			</li>
+
+        
 			<li class="chk-box">
 				<label for="">사용여부</label>
 				<input type="checkbox" id="check-notice"><label for="check-notice" class="check-txt"> 체크시 사용</label>
 			</li>
+
 		</ul>
 	  </div>
 
 
       <div class="bbs-btn-box write-f-btn">
-        <a href="../adm/board.html">이전</a>
-		<a href="../adm/board.html">저장</a>
+        <a href="./booking.html">이전</a>
+		<a href="./booking.html">저장</a>
       </div>
 
 
