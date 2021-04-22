@@ -56,7 +56,7 @@
         <li><a href="./board.html">게시판 관리</a></li>
         <li><a href="./member.html">회원 관리</a></li>
         <li><a href="./popup.html">팝업 관리</a></li>
-        <li><a href="./banner.html">배너 관리</a></li>
+        <li class="on"><a href="./banner.html">배너 관리</a></li>
         <li><a href="./booking.html">장소관리</a></li>
     </ul>
 </div>
@@ -67,9 +67,12 @@
 
 
 
-<div class="adm-set">
 
-	<h1>게시판 관리</h1>
+
+
+<div class="adm-contents">
+
+	<h1>배너 관리</h1>
 
 
 	<div class="search-box">
@@ -80,14 +83,19 @@
 
 
 
-		<div class="adm-table">
+
+
+
+		<div class="adm-banner">
 			<ul class="table-hd">
 				<li>
 					<div class ="no">번호</div>
-					<div class ="name">게시판명</div>
-                    <div class ="board-type">게시판타입</div>
+                    <div class ="location">위치구분</div>
+					<div class ="subject">배너명</div>
+                    <div class ="s-date">사용기간</div>
+                    <div class ="use">사용여부</div>
 					<div class ="date">등록일</div>
-                    <div class ="adm-state">관리</div>
+                    <div class ="set-btn">관리</div>
                     
 				</li>
 			</ul>
@@ -95,35 +103,40 @@
 			<ul class = "table-bd">
 				<li>
 					<div class ="no">1</div>
-					<div class ="name"><a href="../adm/board.html">공지사항</a></div>
-                    <div class ="board-type ">일반</div>
-					<div class ="date">2021.04.21</div>
-                    <div class ="adm-state">
-                        <a href="../adm/board_form.html">수정</a>
-                        <a href="#none">삭제</a>
-                    </div>
+                    <div class ="location">상단</div>
+					<div class ="subject">배너1</div>
+                    <div class ="s-date">2020.04.22 ~ 2021.04.23</div>
+                    <div class ="use">사용</div>
+					<div class ="date">2021.04.23</div>
+                    <div class ="set-btn">
+						<a href="./banner_form.html">수정</a>
+						<a href="">삭제	</a>
+					</div>
                    
 				</li>
 				<li>
 					<div class ="no">2</div>
-					<div class ="name"><a href="../adm/board.html">갤러리</a></div>
-                    <div class ="board-type ">갤러리</div>
-					<div class ="date">2021.04.21</div>
-                    <div class ="adm-state">
-                        <a href="../adm/board_form.html">수정</a>
-                        <a href="#none">삭제</a>
-                    </div>
-                    
+                    <div class ="location">하단</div>
+					<div class ="subject">배너1</div>
+                    <div class ="s-date">2020.04.22 ~ 2021.04.23</div>
+                    <div class ="use">미사용</div>
+					<div class ="date">2021.04.23</div>
+                    <div class ="set-btn">
+						<a href="./banner_form.html">수정</a>
+						<a href="">삭제	</a>
+					</div>
 				</li>
 				<li>
 					<div class ="no">3</div>
-					<div class ="name"><a href="../adm/board.html">자유게시판</a></div>
-                    <div class ="board-type ">자유게시판</div>
-					<div class ="date">2021.04.21</div>
-                    <div class ="adm-state">
-                        <a href="../adm/board_form.html">수정</a>
-                        <a href="#none">삭제</a>
-                    </div>
+                    <div class ="location">하단</div>
+					<div class ="subject">배너3</div>
+                    <div class ="s-date">2020.04.22 ~ 2021.04.23</div>
+                    <div class ="use">사용</div>
+					<div class ="date">2021.04.23</div>
+                    <div class ="set-btn">
+						<a href="./banner_form.html">수정</a>
+						<a href="">삭제	</a>
+					</div>
                    
 				</li>
                
@@ -147,7 +160,7 @@
 
 
 	    <div class="bbs-btn-box">
-			<a href="../adm/board_form.html">게시판생성</a>
+			<a href="./banner_form.html">배너등록</a>
 		</div>
 
 

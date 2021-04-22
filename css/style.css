@@ -247,6 +247,8 @@ body{padding-bottom: 170px;}
 
 .write-f-btn{max-width:800px; margin:20px auto;}
 
+ 
+.write-form .s-date-input input[type="text"] {width: 30%;}
 
 
 
@@ -455,7 +457,7 @@ body{padding-bottom: 170px;}
 .adm-table ul li > div.name{width:10%;}
 .adm-table ul li > div.board-type{width:10%;}
 .adm-table ul li > div.date{width:10%;}
-.adm-table ul li > div.admstate{width:10%;}
+.adm-table ul li > div.adm-state{width:10%;}
 
 
 
@@ -474,7 +476,7 @@ body{padding-bottom: 170px;}
 
 .write-form label.check-txt{display: inline-block;}
 .write-form li{margin-bottom:10px;}
-.write-form li.chk-box{background: 0; padding:10px; border-top:1px solid #ccc; border-bottom:1px solid #ccc; }
+.write-form li.chk-box{background: #fff; padding:10px; border-top:1px solid #ccc; border-bottom:1px solid #ccc; }
 .write-f-btn{max-width:800px; margin:20px auto;}
 .write-form select{width: 40%; border:1px solid #ccc ; height:30px;}
 
@@ -537,3 +539,66 @@ body{padding-bottom: 170px;}
 .adm-mb-form .join-btn{text-align:center;}
 .adm-mb-form .join-btn a{display:inline-block; background: #595252; color: #fff; margin:5px; padding:10px 0px;border-radius: 5px; width:100px; transition:all 0.3s;}
 .adm-mb-form .join-btn a:hover{background: #000; border-radius: 0px;}
+
+
+
+
+
+
+
+
+/* 관리자 팝업 페이지 popup.html ==========================================================================================================================*/
+.adm-popup{background: #fff;}
+.adm-popup ul.table-hd{text-align:center; border-top: 2px solid #000;}
+.adm-popup ul.table-bd{text-align:center;}
+.adm-popup ul.table-bd .name{text-align:left;}
+    
+/*table표를 지정*/
+.adm-popup ul li{display:table; width:100%;}
+.adm-popup ul li > div{display: table-cell; border-bottom: 1px solid #ccc; padding: 10px;}	/*table-cell은 표처럼 행동하는 형식*/
+    
+/*각 cell마다 정리하는 부분*/
+.adm-popup ul li > div.no{width:10%;}
+.adm-popup ul li > div.subject{width:40%;}
+.adm-popup ul li > div.s-date{width:20%;}
+.adm-popup ul li > div.use{width:10%;}
+.adm-popup ul li > div.date{width:10%;}
+.adm-popup ul li > div.set-btn{width:10%;}
+
+.adm-popup ul li > div.set-btn a{display: inline-block; background: #000; color: #fff; padding:5px; margin: 2px;}
+.adm-popup ul li > div.set-btn a:hover{background:#fff;}
+
+
+.adm-popup  .set-btn a{display:inline-block;  margin:5px; padding:10px 0px;}
+.adm-popup  .set-btn a:hover{background: #e1e1e1; border-radius: 0px;}
+
+
+
+
+
+
+/* 관리자 배너 페이지 banner.html ==========================================================================================================================*/
+.adm-banner{background: #fff;}
+.adm-banner ul.table-hd{text-align:center; border-top: 2px solid #000;}
+.adm-banner ul.table-bd{text-align:center;}
+.adm-banner ul.table-bd .name{text-align:left;}
+    
+/*table표를 지정*/
+.adm-banner ul li{display:table; width:100%;}
+.adm-banner ul li > div{display: table-cell; border-bottom: 1px solid #ccc; padding: 10px;}	/*table-cell은 표처럼 행동하는 형식*/
+    
+/*각 cell마다 정리하는 부분*/
+.adm-banner ul li > div.no{width:5%;}
+.adm-banner ul li > div.location{width:10%;}
+.adm-banner ul li > div.subject{width:30%;}
+.adm-banner ul li > div.s-date{width:30%;}
+.adm-banner ul li > div.use{width:5%;}
+.adm-banner ul li > div.date{width:5%;}
+.adm-banner ul li > div.set-btn{width:15%;}
+
+.adm-banner ul li > div.set-btn a{display: inline-block; background: #000; color: #fff; padding:5px; margin: 2px;}
+.adm-banner ul li > div.set-btn a:hover{background:#fff;}
+
+
+.adm-banner  .set-btn a{display:inline-block;  margin:5px; padding:10px 0px;}
+.adm-banner  .set-btn a:hover{background: #e1e1e1; border-radius: 0px;}
