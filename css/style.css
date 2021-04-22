@@ -661,3 +661,10 @@ body{padding-bottom: 170px;}
 
   .popup-box .pop-btn{text-align: right; background-color: #fff;}
   .popup-box .pop-btn a{display: inline-block; background: #000; color: #fff; padding: 5px;}
+
+
+
+
+
+  /*모바일 화면 아닐땐 없애기*/
+  .m-menu {display: none;}
