@@ -22,3 +22,9 @@
 .header .logo h1 {
     padding: 5px 10px;
 }
+
+
+.footer {
+    height: 15%;
+    background: rgb(63, 63, 94);
+}
