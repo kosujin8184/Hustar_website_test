@@ -27,11 +27,11 @@
 <!--반응형 (모바일)-->
 <link rel="stylesheet" media="screen and (max-width:480px)" href="./css/480.css">
 <!--반응형 (태블릿 세로)-->
-<link rel="stylesheet" media="screen and (min-width:481px) and (max-width: 720px)" href="./css/720.css">
+<link rel="stylesheet" media="screen and (min-width:481px) and (max-width: 720px)" href="../css/720.css">
 <!--반응형 (태블릿 가로)-->
-<link rel="stylesheet" media="screen and (min-width:721px) and (max-width: 1024px)" href="./css/1024.css">
+<link rel="stylesheet" media="screen and (min-width:721px) and (max-width: 1024px)" href="../css/1024.css">
 <!--반응형 (PC)-->
-<link rel="stylesheet" media="screen and (min-width:1025px)" href="./css/pc.css">
+<link rel="stylesheet" media="screen and (min-width:1025px)" href="../css/pc.css">
 
 </head>
 <body>
@@ -65,22 +65,22 @@
           <li>
               <a href="#none">회사소개</a>
               <ul class="submenu">
-                <li><a href="./about/intro.html">회사소개</a></li>
-                <li><a href="./about/location.html">오시는길</a></li>
+                <li><a href="../about/intro.html">회사소개</a></li>
+                <li><a href="../about/location.html">오시는길</a></li>
              </ul>
           </li>
 
           <li>
              <a href="#none">게시판</a>
              <ul class="submenu">
-                <li><a href="./bbs/notice_list.html">공지사항</a></li>
-                <li><a href="./bbs/free_list.html">자유게시판</a></li>
-                <li><a href="./bbs/gallery_list.html">갤러리</a></li>
+                <li><a href="../bbs/notice_list.html">공지사항</a></li>
+                <li><a href="../bbs/free_list.html">자유게시판</a></li>
+                <li><a href="../bbs/gallery_list.html">갤러리</a></li>
              </ul>
           </li>
 
-          <li><a href="./booking/list.html">장소예약</a></li>
-          <li><a href="./member/mypage.html">마이페이지</a></li>
+          <li><a href="../booking/list.html">장소예약</a></li>
+          <li><a href="../member/mypage.html">마이페이지</a></li>
        </ul>
 
    </div>
@@ -90,9 +90,25 @@
 <style> 
 .intro-box h1{text-align: center; font-size: 34px; padding: 30px;}
 .intro-box p {text-align: center; line-height: 32px;letter-spacing: 0.8px; font-size: 15px; margin-bottom: 20px;}
-.intro-box img{ width: 1200px; height: 300px; margin: 0 auto; }
+.intro-box img{ width: 1200px; height: 300px; margin: 50px auto; background-color: blue;}
 
+/*게시판리스트 테이블*/
+.intro-table{background: #fff;}
+.intro-table ul.table-hd{text-align:center; border-top: 2px solid #000;}
+.intro-table ul.table-bd{text-align:center;}
+.intro-table ul.table-bd .subject{text-align:left;}
 
+/*table표를 지정*/
+.intro-table ul li{display:table; width:100%;}
+.intro-table ul li > div{display: table-cell; border-bottom: 1px solid #ccc; padding: 10px;}	/*table-cell은 표처럼 행동하는 형식*/
+
+/*각 cell마다 정리하는 부분*/
+.intro-table ul li > div.no{width:10%;}
+.intro-table ul li > div.subject{width:30%;}
+.intro-table ul li > div.subject a{font-size:14px; font-weight:bold;}
+.intro-table ul li > div.subject a:hover{text-decoration:underline; color: #000;}
+.intro-table ul li > div.name{width:70%;}
+.intro-table ul li > div.date{width:20%;}
 
 </style>
 
@@ -112,18 +128,16 @@
 
             
             <div class="spot-summary">
-                <img src="../img/01.jpg">
+                <img src="../img/logo2.png">
             </div>
 
     
     
-            <div class="notice-table">
+            <div class="intro-table">
                 <ul class="table-hd">
                     <li>
-                        <div class ="no">번호</div>
-                        <div class ="subject">제목</div>
-                        <div class ="name">글쓴이</div>
-                        <div class ="date">등록일</div>
+                        <div class ="subject">AVEGERS</div>
+                        <div class ="name">글쓴이asadsadsadsadasdasdsad</div>
                     </li>
                 </ul>
     
@@ -148,24 +162,6 @@
                     </li>
                 </ul>
     
-            </div>
-    
-    
-            <div class="paging">
-                <ul>
-                    <li><a href="#none">처음으로</a></li>
-                    <li><a href="#none">이전</a></li>
-                    <li class ="on"><a href="#none">1</a></li>
-                    <li><a href="#none">2</a></li>
-                    <li><a href="#none">3</a></li>
-                    <li><a href="#none">다음</a></li>
-                    <li><a href="#none">마지막</a></li>
-                    
-                </ul>
-            </div>
-    
-            <div class="bbs-btn-box">
-                <a href="../bbs/free_write.html">글쓰기</a>
             </div>
     
     

@@ -1,30 +1,30 @@
 .header {
     background: rgb(63, 63, 94);
     overflow: hidden;
-}
-
-.header .logo h1 img {
+    }
+    
+    .header .logo h1 img {
     width: 80px;
-}
-
-.header .top-btn ul {
+    }
+    
+    .header .top-btn ul {
     margin-top: 5px;
-}
-
-.header .top-btn ul li a {
+    }
+    
+    .header .top-btn ul li a {
     padding: 13px 5px;
-}
-
-.header .top-btn ul li a {
+    }
+    
+    .header .top-btn ul li a {
     font-size: 12px;
-}
-
-.header .logo h1 {
+    }
+    
+    .header .logo h1 {
     padding: 5px 10px;
-}
-
-
-.menu {
+    }
+    
+    
+    .menu {
     position: fixed;
     z-index: 9999;
     left: -100%;
@@ -33,85 +33,153 @@
     height: 100%;
     background: #fff;
     transition: all 0.3s;
-}
-
-
-.menu > div > ul > li {
+    }
+    
+    
+    .menu > div > ul > li {
     display: block;
-}
-
-.menu > div > ul > li  a {
+    }
+    
+    .menu > div > ul > li  a {
     font-size: 15px;
     margin: 5px 10px;
     color: #000;
     border-bottom: 1px solid #e1e1e1;
-}
-
-
-.menu > div > ul > li > ul.submenu {
+    }
+    
+    
+    .menu > div > ul > li > ul.submenu {
     position: relative;
     background: #efefef;
     border: 0px solid #ccc;
-
-}
-
-.menu > div > ul > li ul.submenu a{
+    
+    }
+    
+    .menu > div > ul > li ul.submenu a{
     font-size: 12px;
-}
-
-.banner .swiper-container{
+    }
+    
+    .banner .swiper-container{
     height: auto;
-}
-
-
-.bbs-box > div > .board-box {
+    }
+    
+    
+    .bbs-box > div > .board-box {
     float: none;
     width: auto;
-}
-
-.bbs-box > div > .right-banner {
+    }
+    
+    .bbs-box > div > .right-banner {
     float: none;
     width: auto;
-}
-
-
-
-.footer{position: relative; left: 0; right: 0; width: 100%; background: rgb(63, 63, 94); color:#ccc;}
-
-body{padding-bottom: 200px;}
-
-
-
-
-
-/*모바일 전용 메뉴==================================================================================================================================*/
-  /*모바일 화면 아닐땐 없애기*/
-.m-menu{display: block;}
-.m-menu{position: absolute; right: 10px; top:56px; z-index: 9999;}
-.m-menu a{display: block; width: 25px; height: 20px;  position: relative; transition: all 0.1s;} /*position:relative => a가 기준이돼라*/
-.m-menu a span{width: 100%; height: 3px;background: #000; display:block; position:absolute; transition: all 0.1s; left: 0;}
-.m-menu a span:nth-child(1){top: 0px; }
-.m-menu a span:nth-child(2){top: 8px;}
-.m-menu a span:nth-child(3){bottom: 1px;}
-
-
-.m-menu a.active span:nth-child(1){
-  transform: rotate(-45deg) translateY(12px);
-  left: -7px;
-}
-.m-menu a.active span:nth-child(2){
-  opacity: 0;
-}
-.m-menu a.active span:nth-child(3){
-  transform: rotate(45deg) translateY(-12px);
-  left: -7px;
-}
-
-
-/*
-.m-menu a.active {
-	-webkit-transform : rotate(90deg);
-	transform : rotate(90deg);
-}
-*/
-
+    }
+    
+    
+    
+    .footer{position: relative; left: 0; right: 0; width: 100%; background: rgb(63, 63, 94); color:#ccc;}
+    
+    body{padding-bottom: 200px;}
+    
+    
+    
+    
+    
+    /*모바일 전용 메뉴==================================================================================================================================*/
+    .m-menu{display: block;}
+    .m-menu{position: absolute; right: 10px; top:56px; z-index: 9999;}
+    .m-menu a{display: block; width: 25px; height: 20px;  position: relative; transition: all 0.1s;} /*position:relative => a가 기준이돼라*/
+    .m-menu a span{width: 100%; height: 3px;background: #000; display:block; position:absolute; transition: all 0.1s; left: 0;}
+    .m-menu a span:nth-child(1){top: 0px; }
+    .m-menu a span:nth-child(2){top: 8px;}
+    .m-menu a span:nth-child(3){bottom: 1px;}
+    
+    
+    .m-menu a.active span:nth-child(1){
+    transform: rotate(-45deg) translateY(12px);
+    left: -7px;
+    }
+    .m-menu a.active span:nth-child(2){
+    opacity: 0;
+    }
+    .m-menu a.active span:nth-child(3){
+    transform: rotate(45deg) translateY(-12px);
+    left: -7px;
+    }
+    
+    
+    /*
+    .m-menu a.active {
+    -webkit-transform : rotate(90deg);
+    transform : rotate(90deg);
+    }
+    */
+    
+    .notice-box h1 {
+        font-size: 20px;
+    }
+    
+    
+    .notice-table ul li > div.no {
+        width: 13%;
+    }
+    
+    .notice-table ul li > div.subject {
+        width: 47;
+    }
+    
+    .contents {
+        padding: 10px;
+    }
+    
+    .gallery-table > ul > li {
+        width: 50%;
+    }
+    
+    .gallery-table > ul > li:nth-child(5n+1) {
+        clear: unset;
+    }
+    
+    .gallery-table > ul > li:nth-child(2n+1) {
+        clear: both;
+    }
+    
+    .booking-table .thum {
+        text-align: auto;
+        width: 35%;
+    }
+    
+    .booking-table .info {
+        width: 65%;
+    }
+    
+    .booking-table .info p {
+        font-size: 12px;
+    }
+    
+    .booking-table .info a {
+        font-weight:bold;
+        font-size: 15px;
+    }
+    
+    
+    
+    .booking-view .photo-box .view-photo {
+        float: none;
+        width: auto;
+        height: auto;
+        padding: 5px;
+        margin-top: 10px;
+    }
+    
+    .booking-view .photo-box .calendar {
+        float: auto;
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
+    
+    .view-detail {
+        margin-top:20px;
+    }
+    
+    
