@@ -1,5 +1,5 @@
 .header {
-background: rgb(63, 63, 94);
+background: rgb(43, 33, 84);
 overflow: hidden;
 }
 
@@ -32,7 +32,7 @@ width: 100%;
 max-width: 200px;
 height: 100%;
 background: #fff;
-transition: all 0.3s;
+transition: all 0.3s;d
 }
 
 
@@ -76,7 +76,7 @@ width: auto;
 
 
 
-.footer{position: relative; left: 0; right: 0; width: 100%; background: rgb(63, 63, 94); color:#ccc;}
+.footer{position: relative; left: 0; right: 0; width: 100%; background: rgb(43, 33, 84); color:#ccc;}
 
 body{padding-bottom: 200px;}
 
@@ -132,101 +132,23 @@ transform : rotate(90deg);
 }
 
 .gallery-table > ul > li {
-    width: 50%;
+    width: 33.33%;
 }
 
 .gallery-table > ul > li:nth-child(5n+1) {
     clear: unset;
 }
 
-.gallery-table > ul > li:nth-child(2n+1) {
-    clear: both;
-}
 
 .booking-table .thum {
-    text-align: auto;
-    width: 35%;
-}
-
-.booking-table .info {
-    width: 65%;
-}
-
-.booking-table .info p {
-    font-size: 12px;
-}
-
-.booking-table .info a {
-	font-weight:bold;
-    font-size: 15px;
-}
-
-
-
-.booking-view .photo-box .view-photo {
+    width: auto;
     float: none;
+}
+
+.booking-table .thum a {
+    max-height: none;
+}
+.booking-table .info {
     width: auto;
-    height: auto;
-    padding: 5px;
-	margin-top: 10px;
+    float: none;
 }
-
-.booking-view .photo-box .calendar {
-    float: auto;
-    width: 100%;
-    height: auto;
-	margin-top: 10px;
-}
-
-.view-detail {
-    margin-top:20px;
-}
-
-.mypage-table {background: none;}
-
-.mypage-table ul.table-hd {
-    display: none;
-}
-
-.mypage-table ul li {
-    display: block;
-    width: 100%;
-    border: 1px solid #ccc;
-    margin-bottom: 10px;
-	background: #fff;
-	overflow:hidden;
-	border-top:1px solid #000;
-}
-
-.mypage-table ul li > div {
-    display: block;
-    border-bottom: 0px solid #ccc;
-    float:left;
-}
-
-.mypage-table ul li > div.no {
-    width: 15%;
-}
-
-.mypage-table ul li > div.subject {
-    width: 85%;
-}
-
-.mypage-table ul li > div.state {
-    width: auto;
-	float: left;
-}
-
-.mypage-table ul li > div.date1 {
-    width: auto;
-    float: left;
-}
-
-.mypage-table ul li > div.date1:before{content:"등록일 : "; color:#888;}
-
-.mypage-table ul li > div.date2 {
-    width: auto;
-    float: left;
-}
-
-.mypage-table ul li > div.date2:before{content:"예약일 : "; color:#888;}

@@ -1,0 +1,59 @@
+<!--헤더 인클루드-->
+<?php include('../sub_header.php'); ?>
+
+<style>
+.loaction-box h1{text-align: center; font-size: 34px; padding: 30px;}
+.loaction-box img{ width: auto; height: auto; margin: 50px auto; background-color: blue;}
+
+</style>
+
+<!--contents 시작-->
+<div class="contents">
+  <div class="notice-wrap">
+
+    <div class="loaction-box">
+
+      <h1>오시는 길</h1>
+
+
+
+      <div class="spot-summary">
+        <img src="../img/logo2.png">
+      </div>
+
+
+      <!-- * 카카오맵 - 지도퍼가기 -->
+      <!-- 1. 지도 노드 -->
+      <div id="daumRoughmapContainer1619167347878" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+      <!--2. 설치 스크립트-->
+      <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+      <!-- 3. 실행 스크립트 -->
+      <script charset="UTF-8">
+      new daum.roughmap.Lander({
+      "timestamp" : "1619167347878",
+      "key" : "25hk7",
+      "mapWidth" : "640",
+      "mapHeight" : "360"
+      }).render();
+      </script>
+
+
+    </div>
+
+  </div>
+
+
+</div>
+<!--contents 끝-->
+
+
+
+
+
+
+
+
+<!--헤더 인클루드-->
+<?php include('../footer.php'); ?>
